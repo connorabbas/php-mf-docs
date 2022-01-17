@@ -21,8 +21,8 @@ spl_autoload_register(
 );
 
 // Include DB connection once, use dependency injection with class object constructors for DB usage
-$db = new DB();
+//$db = new DB();
 
 // Invoke the site
-$site = new SiteController($db);
+$site = new SiteController();
 $site->invoke();

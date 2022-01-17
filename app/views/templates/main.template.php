@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="<?= App::path('/') ?>">Home</a>
-                        <a class="nav-link" href="<?= App::path('/documentation') ?>">Docs</a>
+                        <a class="nav-link" href="<?= App::path('/documentation') ?>">Documentation</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         <script src="<?= App::path('/resources/js/bootstrap/bootstrap.bundle.min.js') ?>"></script>
         <script>
             var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-                target: '#list-example'
+                target: '#doc-list'
             })
         </script>
 

@@ -1,17 +1,17 @@
 <?php
 class SiteController
 {
-    protected $db;
+    /* protected $db;
 
     public function __construct($db)
     {
         $this->db = $db;
-    }
+    } */
 
     public function invoke()
     {
         // Valid routes for site
-        $routes = new Route($this->db);
+        $routes = new Route();
         require_once('./app/routes.php');
     }
 }

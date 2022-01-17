@@ -1,12 +1,12 @@
 <?php
 class Route
 {
-    protected $db;
+    /* protected $db;
 
     public function __construct($db)
     {
         $this->db = $db;
-    }
+    } */
 
     public function set($route, $callback)
     {
@@ -70,13 +70,13 @@ class Route
                 $class_name = $callback[0];
                 $method_name = $callback[1];
                 $fully_qualified_class_name = "\\$class_name";
-                $obj = new $fully_qualified_class_name($this->db);
+                $obj = new $fully_qualified_class_name();
                 call_user_func( [$obj, $method_name],  $callback[1]);
                 $ValidRoute = $route;
             } 
         }
         else if (is_callable($callback)) {
-            $callback->__invoke($this->db);
+            $callback->__invoke();
             $ValidRoute = $route;
         }
     }
