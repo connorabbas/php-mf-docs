@@ -28,6 +28,8 @@
 
         <!-- Scripts -->
         <script src='<?= App::path('/resources/js/jquery.min.js') ?>' type='text/javascript'  ></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="<?= App::path('/') ?>">Home</a>
-                        <a class="nav-link" href="<?= App::path('/tester') ?>">Tester Page</a>
+                        <a class="nav-link" href="<?= App::path('/documentation') ?>">Docs</a>
                     </div>
                 </div>
             </div>
@@ -53,6 +55,11 @@
 
         <!-- Script Resources -->
         <script src="<?= App::path('/resources/js/bootstrap/bootstrap.bundle.min.js') ?>"></script>
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#list-example'
+            })
+        </script>
 
     </body>
 </html>

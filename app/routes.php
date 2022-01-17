@@ -8,4 +8,11 @@ $routes->get('/', function(){
     ]);
 });
 
+$routes->get('/documentation', function(){
+    return App::view('documentation', [
+        'pageTitle' => 'Docs',
+        'pageDesc' => 'Documentation for the php mini framework',
+    ]);
+});
+
 $routes->checkRoute();
