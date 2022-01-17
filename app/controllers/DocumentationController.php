@@ -175,7 +175,7 @@ $viewCode3 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">// within app/views/home.php
+<code class="language-html">// within app/views/home.php
 &lt;div&gt;
     &lt;h1&gt;Home Page Content&lt;/h1&gt;
     &lt;p&gt;Page Title: &lt;?= $pageTitle ?&gt;&lt;/p&gt;
@@ -262,6 +262,15 @@ class TesterController extends SiteController
 <?php
 $modelCode2 = ob_get_clean();
 
+ob_start();
+?>
+<pre>
+<code class="language-bash">php mini create:model YourModelName
+</code>
+</pre>
+<?php
+$modelCLICode = ob_get_clean();
+
         return App::view('documentation', [
             'pageTitle' => 'Docs',
             'pageDesc' => 'Documentation for the php mini framework',
@@ -279,6 +288,7 @@ $modelCode2 = ob_get_clean();
             'viewCode5' => $viewCode5,
             'modelCode' => $modelCode,
             'modelCode2' => $modelCode2,
+            'modelCLICode' => $modelCLICode,
         ]);
     }
 }

@@ -25,11 +25,13 @@
         <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/styles.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/animate.min.css') ?>" rel="stylesheet">
+        <link href="<?= App::path('/resources/css/highlight_js.css') ?>" rel="stylesheet">
 
         <!-- Scripts -->
         <script src='<?= App::path('/resources/js/jquery.min.js') ?>' type='text/javascript'  ></script>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script src='<?= App::path('/resources/js/highlight.js') ?>' type='text/javascript'  ></script>
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
