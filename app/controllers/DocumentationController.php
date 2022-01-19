@@ -289,6 +289,6 @@ $modelCLICode = ob_get_clean();
             'modelCode' => $modelCode,
             'modelCode2' => $modelCode2,
             'modelCLICode' => $modelCLICode,
-        ]);
+        ], 'docs');
     }
 }

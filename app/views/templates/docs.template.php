@@ -57,5 +57,11 @@
 
         <!-- Script Resources -->
         <script src="<?= App::path('/resources/js/bootstrap/bootstrap.bundle.min.js') ?>"></script>
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#doc-list'
+            })
+        </script>
+
     </body>
 </html>
