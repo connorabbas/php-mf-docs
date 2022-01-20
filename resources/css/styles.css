@@ -13,3 +13,7 @@ pre.dump{
     background-color: #f8f9fa!important;
     color: #616161 !important;
 }
+
+pre code {
+    border-radius: .5rem;
+}

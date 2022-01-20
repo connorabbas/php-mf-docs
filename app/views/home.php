@@ -19,7 +19,7 @@
                 <li>Bootstrap 5, jQuery, and React included</li>
             </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-5">
             <p>This site is using PHP Mini Framework, and the results speak for themself:</p>
             <img src="<?= App::path('/resources/images/performance.png') ?>" alt="p_img" class="img-fluid">
         </div>

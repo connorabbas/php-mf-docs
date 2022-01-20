@@ -5,18 +5,13 @@ error_reporting(E_ALL);
 
 // ENV and global vars
 //require_once('./app/env.php');
-putenv("DB_HOST=127.0.0.1");
-putenv("DB_USERNAME=root");
-putenv("DB_PASSWORD=");
-putenv("DB_NAME=");
+require_once('./app/globals.php');
 
 if (strpos(__DIR__, 'C:') !== false) {
     putenv("BASE_DIR=/php-mf-docs/");
 } else {
     putenv("BASE_DIR=/");
 }
-
-require_once('./app/globals.php');
 
 // Autoload Classes
 spl_autoload_register(
@@ -37,3 +32,5 @@ spl_autoload_register(
 // Invoke the site
 $site = new SiteController();
 $site->invoke();
+
+var_dump(__DIR__);
