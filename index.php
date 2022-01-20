@@ -5,13 +5,14 @@ error_reporting(E_ALL);
 
 // ENV and global vars
 //require_once('./app/env.php');
-require_once('./app/globals.php');
 
 if (strpos(__DIR__, 'C:') !== false) {
     putenv("BASE_DIR=/php-mf-docs/");
 } else {
     putenv("BASE_DIR=/");
 }
+
+require_once('./app/globals.php');
 
 // Autoload Classes
 spl_autoload_register(

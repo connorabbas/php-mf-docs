@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 mb-4">
-            <h5>Features:</h5>
+            <h5>Framework Features:</h5>
             <ul>
                 <li>Routing for GET, POST, PATCH, PUT & DELETE HTTP requests</li>
                 <li>MVC architecture</li>
