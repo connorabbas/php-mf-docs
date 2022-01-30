@@ -68,7 +68,7 @@
                 <div id="doc6" class="pt-5 mb-5">
                     <h2 class="mb-3">Models and Database</h2>
                     <p>Models are meant to interact with your database. The included DB class is used to connect and execute your DB queries. The DB class uses PDO, and is setup to accept a dsn of stored credentials to connect using mySQL as the default (This could be changed to another driver like ODBC).</p>
-                    <p>The database connection should be instantiated in the index.php file, and then passed into whatever class contructers need to use it.</p>
+                    <p>The database connection is instantiated in the index.php file, and then passed into whatever class contructers need to use it.</p>
                     <p>You can create a model using the cli tools just like you can with controllers:</p>
                     <?= $modelCLICode ?>
                     <h5 class="mt-4 mb-3">Example Model Class</h5>
