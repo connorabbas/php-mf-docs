@@ -16,7 +16,7 @@
                 <li>Basic CLI commands for creating Models & Controllers</li>
                 <li>Class auto loading</li>
                 <li>PDO database class</li>
-                <li>Bootstrap 5, jQuery, and React included</li>
+                <li>Bootstrap 5 & animate.css included</li>
             </ul>
         </div>
         <div class="col-md-6 mb-5">
