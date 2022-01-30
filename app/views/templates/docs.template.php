@@ -22,7 +22,8 @@
         <meta property="og:image:height" content="670" />
 
         <!-- Resources -->
-        <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet">
+        <!-- <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet"> -->
+        <link href="<?= App::path('/resources/css/bootstrap/bootstrap.dark.min.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/styles.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/animate.min.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/highlight_js.css') ?>" rel="stylesheet">
