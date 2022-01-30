@@ -8,7 +8,7 @@ class DocumentationController extends SiteController
 ob_start();
 ?>
 <pre>
-<code class="language-html">// Example linking a style sheet
+<code class="shadow-sm language-html">// Example linking a style sheet
 &lt;link href=&quot;&lt;?= App::path('/resources/css/styles.css') ?&gt;&quot; rel=&quot;stylesheet&quot;&gt;
 
 // Example link to a page
@@ -25,7 +25,7 @@ $pathCode = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">// Example redirect user to login page
+<code class="shadow-sm language-php">// Example redirect user to login page
 &lt;?php
 App::redirect('/login?loggedOut=1');
 ?&gt;
@@ -39,7 +39,7 @@ $redirectcode = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 // Enviroment specific variables
 
 // Database
@@ -60,7 +60,7 @@ $code1 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 $routes-&gt;get($uri, $callback);
 $routes-&gt;post($uri, $callback);
 $routes-&gt;put($uri, $callback);
@@ -74,7 +74,7 @@ $routeMehthods = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 // Basic home route where callback is callable function
 $routes->get('/', function(){
     return 'Hello World';
@@ -92,7 +92,7 @@ $code2 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-bash">php mini create:controller YourControllerName
+<code class="shadow-sm language-bash">php mini create:controller YourControllerName
 </code>
 </pre>
 <?php
@@ -100,7 +100,7 @@ $cliCode = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 class YourControllerName extends SiteController
 {
     protected $db;
@@ -124,7 +124,7 @@ $cliCode2 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 App::view($view, $data = [], $template = 'main');
 ?&gt;
 </code>
@@ -135,7 +135,7 @@ $viewCode = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">// app/controllers/HomeController.php
+<code class="shadow-sm language-php">// app/controllers/HomeController.php
 &lt;?php
 class HomeController 
 {
@@ -163,7 +163,7 @@ $viewCode2 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">// within app/routes.php
+<code class="shadow-sm language-php">// within app/routes.php
 &lt;?php
 $route-&gt;get('/', [HomeController::class, 'index']);
 ?&gt;
@@ -175,7 +175,7 @@ $viewCode3 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-html">// within app/views/home.php
+<code class="shadow-sm language-html">// within app/views/home.php
 &lt;div&gt;
     &lt;h1&gt;Home Page Content&lt;/h1&gt;
     &lt;p&gt;Page Title: &lt;?= $pageTitle ?&gt;&lt;/p&gt;
@@ -189,7 +189,7 @@ $viewCode4 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">// within app/routes.php
+<code class="shadow-sm language-php">// within app/routes.php
 &lt;?php
 $routes-&gt;get('/', function(){
     return App::view('home', [
@@ -206,7 +206,7 @@ $viewCode5 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 class Example
 {
     protected $db;
@@ -234,7 +234,7 @@ $modelCode = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-php">&lt;?php
+<code class="shadow-sm language-php">&lt;?php
 class TesterController extends SiteController
 {
     protected $db;
@@ -265,7 +265,7 @@ $modelCode2 = ob_get_clean();
 ob_start();
 ?>
 <pre>
-<code class="language-bash">php mini create:model YourModelName
+<code class="shadow-sm language-bash">php mini create:model YourModelName
 </code>
 </pre>
 <?php

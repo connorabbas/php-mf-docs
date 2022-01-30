@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4 sticky-sm-top pt-5" style="align-self: flex-start; top: 0px; z-index: 0;">
-            <div id="doc-list" class="list-group">
+            <div id="doc-list" class="list-group shadow-sm">
                 <a class="list-group-item list-group-item-action" href="#doc1" id="firstitem">Overview & Basics</a>
                 <a class="list-group-item list-group-item-action" href="#doc2">Enviroment</a>
                 <a class="list-group-item list-group-item-action" href="#doc3">Routing</a>
