@@ -28,7 +28,7 @@
                     <h2 class="mb-3">Enviroment</h2>
                     <p class="">Upon installation you will need to create a env.php file in the /app directory, here is the starter code:</p>
                     <?= $code1 ?>
-                    <p class="">The env.php is where you will store your enviroment spcific variables. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information is pushed to your remote repository.</p>
+                    <p class="">The env.php is where you will store your enviroment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information is pushed to your remote repository.</p>
                 </div>
                 <hr>
                 <div id="doc3" class="pt-5 mb-5">
