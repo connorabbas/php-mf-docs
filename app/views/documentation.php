@@ -14,10 +14,11 @@
             <div data-bs-spy="scroll" data-bs-target="#doc-list" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                 <div id="doc1" class="">
                     <h2 class="mb-3 pt-5">Overview & Basics</h2>
-                    <p class="">For security and routing purposes, all traffic for the site will be routed to index.php via htaccess rules, this makes hitting php files directly impossible. All valid routes must be registered.</p>
-                    <p class="mb-4">Classes are auto loaded, so no need to worry about including the class file. Just instantiate the object and start using it!</p>
+                    <h5 class="mt-4">General</h5>
+                    <p class="">All valid routes must be registered in /app/routes.php, you will not be able to hit a php file directly (for obvious security reasons). When setting up your site for production, you should point the http configuration to the public folder.</p>
+                    <p class="mb-4">There are no namespaces being used, classes are auto loaded. No need to worry about including the class file, just instantiate the object and start using it wherever you need.</p>
                     <h5 class="">Linking</h5>
-                    <p class="mb-3">If you want to reference a linked path within the application, use the path() method. This is used for anchor tag links, importing styles and scripts locally, images, etc.</p>
+                    <p class="mb-3">If you want to reference a linked path within the application, use the path() method. This is used for anchor tags referencing local pages, importing styles and scripts locally, images, etc.</p>
                     <?= $pathCode ?>
                     <h5 class="mt-3">Page Redirects</h5>
                     <p class="mb-3">Instead of using header() with BASE_DIR or path(), just use the redirect() function with whatever route you want the user to be routed to.</p>
@@ -29,6 +30,8 @@
                     <p class="">Upon installation you will need to create a env.php file in the /app directory, here is the starter code:</p>
                     <?= $code1 ?>
                     <p class="">The env.php is where you will store your enviroment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information is pushed to your remote repository.</p>
+                    <p>Ideally you will change the outer directoy to the name of your project. You will need to relfect this in the BASE_ENV variable.</p>
+                    <p><b>Note:</b> the BASE_DIR is responsible for page routing, and needs to be configured correctly. You will only need to set the variable as "/your-project-name/public/" for local developments (using XAMPP for example), for production you will set the variable to simply: "/". </p>
                 </div>
                 <hr>
                 <div id="doc3" class="pt-5 mb-5">

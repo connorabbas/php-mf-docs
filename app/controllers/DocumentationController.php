@@ -49,7 +49,7 @@ putenv("DB_PASSWORD=");
 putenv("DB_NAME=");
 
 // Site Base Directory
-putenv("BASE_DIR=/php-mf/");
+putenv("BASE_DIR=/php-mf/public/");
 ?&gt;
 </code>
 </pre>
