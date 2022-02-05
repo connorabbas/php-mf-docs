@@ -39,9 +39,12 @@
                     <h5>Request Methods</h5>
                     <p>The application's router offers the following methods for the common http site requests:</p>
                     <?= $routeMehthods ?>
-                    <h5 class="mt-3">Callback functions</h5>
+                    <h5 class="mt-3">Callback Functions</h5>
                     <p>The callback will either be a self contained function, where you can execute your routes logic, or it will be an array where the first item is the class you want to reference (usually a controller), and the second item is the method name.</p>
                     <?= $code2 ?>
+                    <h5 class="mt-3">Dynamic Routes</h5>
+                    <p>You can set dynamic values in your routes slug for GET requests.</p>
+                    <?= $routeSlug ?>
                 </div>
                 <hr>
                 <div id="doc4" class="pt-5 mb-5">

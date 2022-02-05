@@ -81,12 +81,23 @@ $routes->get('/', function(){
 });
 
 // Alternatively, use a controller class and a method to store your logic in
-$route-&gt;get('/', [HomeController::class, 'index']);
+$routes-&gt;get('/', [HomeController::class, 'index']);
 ?&gt;
 </code>
 </pre>
 <?php
 $code2 = ob_get_clean();
+ob_start();
+?>
+<pre>
+<code class="shadow-sm language-php">&lt;?php
+// Dynamic var in your routes URL
+$routes->get('/blog/$id', [BlogController::class, 'index']);
+?&gt;
+</code>
+</pre>
+<?php
+$routeSlug = ob_get_clean();
 
 // CLI
 ob_start();
@@ -165,7 +176,7 @@ ob_start();
 <pre>
 <code class="shadow-sm language-php">// within app/routes.php
 &lt;?php
-$route-&gt;get('/', [HomeController::class, 'index']);
+$routes-&gt;get('/', [HomeController::class, 'index']);
 ?&gt;
 </code>
 </pre>
@@ -289,6 +300,7 @@ $modelCLICode = ob_get_clean();
             'modelCode' => $modelCode,
             'modelCode2' => $modelCode2,
             'modelCLICode' => $modelCLICode,
+            'routeSlug' => $routeSlug,
         ], 'docs');
     }
 }
