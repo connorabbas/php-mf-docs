@@ -29,7 +29,7 @@
                     <h2 class="mb-3">Enviroment</h2>
                     <p class="">Upon installation you will need to create a env.php file in the /app directory, here is the starter code:</p>
                     <?= $code1 ?>
-                    <p class="">The env.php is where you will store your enviroment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information is pushed to your remote repository.</p>
+                    <p class="">The env.php is where you will store your enviroment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information isn't pushed to your remote repository.</p>
                     <p>Ideally you will change the outer directoy to the name of your project. You will need to relfect this in the BASE_ENV variable.</p>
                     <p><b>Note:</b> the BASE_DIR is responsible for page routing, and needs to be configured correctly. You will only need to set the variable as "/your-project-name/public/" for local developments (using XAMPP for example), for production you will set the variable to simply: "/". </p>
                 </div>
