@@ -22,10 +22,8 @@
         <meta property="og:image:height" content="670" />
 
         <!-- Resources -->
-        <!-- <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet"> -->
-        <link href="<?= App::path('/resources/css/bootstrap/bootstrap.dark.min.css') ?>" rel="stylesheet">
+        <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/styles.css') ?>" rel="stylesheet">
-        <link href="<?= App::path('/resources/css/animate.min.css') ?>" rel="stylesheet">
         <link href="<?= App::path('/resources/css/highlight_js.css') ?>" rel="stylesheet">
 
         <!-- Scripts -->
@@ -35,21 +33,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">php-mf</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="<?= App::path('/') ?>">Home</a>
-                        <a class="nav-link" href="<?= App::path('/documentation') ?>">Documentation</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div id="contentContainer" class="animate__animated animate__fadeIn">
+        <div id="contentContainer" class="">
             <?php
             // Content View
             App::view($view, $data, null);
