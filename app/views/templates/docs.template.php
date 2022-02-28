@@ -32,7 +32,7 @@
         <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
     </head>
-    <body>
+    <body class="bg-light">
         <div id="contentContainer" class="">
             <?php
             // Content View
