@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4 sticky-sm-top pt-5" style="align-self: flex-start; top: 0px; z-index: 0;">
-            <div id="doc-list" class="list-group shadow-sm">
+            <div id="doc-list" class="list-group shadow-sm mb-4" style="border:none !important;">
                 <a class="list-group-item list-group-item-action" href="#doc1" id="firstitem">Overview</a>
                 <a class="list-group-item list-group-item-action" href="#doc2">Installation / Enviroment</a>
                 <a class="list-group-item list-group-item-action" href="#doc3">Routing</a>
@@ -9,6 +9,10 @@
                 <a class="list-group-item list-group-item-action" href="#doc5">Views</a>
                 <a class="list-group-item list-group-item-action" href="#doc6">Models and Database</a>
                 <a class="list-group-item list-group-item-action" href="#doc7">Other Functions</a>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="lightDarkToggle">&nbsp;
+                <label class="form-check-label" for="lightDarkToggle" style="line-height: 2.5rem; vertical-align:middle;">Toggle light/dark mode</label>
             </div>
         </div>
         <div class="col-sm-8">
