@@ -28,3 +28,27 @@ pre code {
 p, ul>li {
     font-size: .8rem;
 }
+.form-check-input:hover, .form-check-label:hover{
+    cursor: pointer;
+}
+
+.form-switch .form-check-input{
+    width: 4em !important;
+}
+.form-check-input{
+    height: 2em !important;
+}
+
+.list-group-item{
+    border:none !important;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: .5rem !important;
+    border-top-right-radius: .5rem !important;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: .5rem !important;
+    border-bottom-left-radius: .5rem !important;
+}

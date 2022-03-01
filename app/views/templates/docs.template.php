@@ -22,9 +22,10 @@
         <meta property="og:image:height" content="670" />
 
         <!-- Resources -->
-        <link href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet">
+        <link id="bs_styles" href="<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>" rel="stylesheet">
+        <!-- <link id="bs_styles" href="<?= App::path('/resources/css/bootstrap/bootstrap.dark.min.css') ?>" rel="stylesheet"> -->
         <link href="<?= App::path('/resources/css/styles.css') ?>" rel="stylesheet">
-        <link href="<?= App::path('/resources/css/highlight_js.css') ?>" rel="stylesheet">
+        <link id="syntax_styles" href="<?= App::path('/resources/css/highlight_js.css') ?>" rel="stylesheet">
 
         <!-- Scripts -->
         <script src='<?= App::path('/resources/js/jquery.min.js') ?>' type='text/javascript'  ></script>
@@ -32,7 +33,7 @@
         <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
     </head>
-    <body class="bg-light">
+    <body class="bg-light" id="body">
         <div id="contentContainer" class="">
             <?php
             // Content View
@@ -46,6 +47,22 @@
             var scrollSpy = new bootstrap.ScrollSpy(document.body, {
                 target: '#doc-list'
             })
+        </script>
+
+        <script>
+            $("#lightDarkToggle").change(function() {
+                if (this.checked) {
+                    document.getElementById('bs_styles').setAttribute('href', '<?= App::path('/resources/css/bootstrap/bootstrap.dark.min.css') ?>');
+                    document.getElementById('syntax_styles').setAttribute('href', '<?= App::path('/resources/css/highlight_js.dark.css') ?>');
+                    $('#body').removeClass('bg-light');
+                    //$('#body').addClass('bg-dark');
+                } else {
+                    document.getElementById('bs_styles').setAttribute('href', '<?= App::path('/resources/css/bootstrap/bootstrap.min.css') ?>');
+                    document.getElementById('syntax_styles').setAttribute('href', '<?= App::path('/resources/css/highlight_js.css') ?>');
+                    //$('#body').removeClass('bg-dark');
+                    $('#body').addClass('bg-light');
+                }
+            });
         </script>
 
     </body>
