@@ -3,7 +3,7 @@
         <div class="col-sm-4 sticky-sm-top pt-5" style="align-self: flex-start; top: 0px; z-index: 0;">
             <div id="doc-list" class="list-group shadow-sm mb-4" style="border:none !important;">
                 <a class="list-group-item list-group-item-action" href="#doc1" id="firstitem">Overview</a>
-                <a class="list-group-item list-group-item-action" href="#doc2">Installation / Enviroment</a>
+                <a class="list-group-item list-group-item-action" href="#doc2">Installation / Environment</a>
                 <a class="list-group-item list-group-item-action" href="#doc3">Routing</a>
                 <a class="list-group-item list-group-item-action" href="#doc4">Controllers</a>
                 <a class="list-group-item list-group-item-action" href="#doc5">Views</a>
@@ -40,9 +40,9 @@
                 </div>
                 <hr>
                 <div id="doc2" class="pt-5 mb-5">
-                    <h2 class="mb-3">Installation / Enviroment</h2>
+                    <h2 class="mb-3">Installation / Environment</h2>
                     <p class=""><span class="text-danger fw-bold">Important!</span> After you clone/setup your project you will need to rename the env file located in /app/vars/ to env.php and run: <span class="fw-bold">composer update</span> command in the base directory via a CLI to gather dependencies for the framework's view templating.</p>
-                    <p class="">The env.php file is where you will store your enviroment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information isn't pushed to your remote repository.</p>
+                    <p class="">The env.php file is where you will store your environment specific variables and private information. This includes Database credentials, API keys, etc. This file is added to the gitignore file by default, so sensitive information isn't pushed to your remote repository.</p>
                     <p>Ideally you will change the outer directoy to the name of your project. You will need to relfect this in the BASE_ENV variable.</p>
                     <p><b>Note:</b> the BASE_DIR constant is responsible for page routing, and needs to be configured correctly. You will only need to set the variable as "/your-project-name/public/" for local developments (using XAMPP for example), for production you will just set the variable to: "/". </p>
                 </div>
